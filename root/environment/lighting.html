@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<!-- lighting.html -->
+<!-- Brandon Banner -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Environment: Lighting</title>
+    <link href="css/environment-style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet'>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js%22%3E"></script>
+  </head>
+  <body>
+    <header>
+      <div class = "header">
+        <div class = "back-icon-section">
+          <img onclick="history.back()" align= left src="../images/back-icon.png" alt="Back button" class="back-button">
+        </div>
+        <div class = "home-icon-section">
+          <img onclick= "location.href= '../index.html'" src="../images/home-icon.png" alt="Home button" class="home-button">
+        </div>
+      <div class = "title-section">
+      <h1 class='title'>Lighting</h1>
+      </div>
+    </div>
+    </header>
+
+    <main>
+      <!-- Overall div for layout -->
+      <div class = "layout">
+        <!-- Div for the status and temperature sections -->
+      <div class = "first-half">
+        <!-- Status Section -->
+        <h2 class = 'section-title'>Lights</h2>
+        <div class="list-button-container" role="group">
+          <button type="button" class="list-button">Ceiling Light ⌄</button>
+          <button type="button" class="list-button">Lamp ⌄</button>
+          <button type="button" class="list-button">All</button>
+</div>
+      <h2 class = 'section-title'>Fan</h2>
+      <div class="list-button-container" role="group">
+        <button type="button" class="list-button">Ceiling Fan ⌄</button>
+</div>
+      <!-- Div for dehumidifier section -->
+    </div>
+        <!-- Div for second half -->
+    <div class = "second-half">
+      <!-- Div for usage section -->
+      <div class = "usage-section">
+        <h2 class = 'section-title'>Usage History</h2>
+        <!-- Show / Hide toggle switch -->
+        <input type="checkbox" id="switch">
+        <div class="app">
+          <div class="content">
+            <label for="switch">
+            <div class="toggle"></div>
+            <div class="names">
+              <p class="on">Show</p>
+              <p class="off">Hide</p>
+            </div>
+            </label>
+          </div>
+        </div>
+            <!-- Usage history chart -->
+      <div class="usage-container-small">
+      <canvas align = right id="myChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script> //DISCLAIMER! All script code is modified from Chartjs.org
+  const labels = [
+    '11/1/2021',
+    '11/2/2021',
+    '11/3/2021',
+    '11/4/2021',
+    '11/5/2021',
+    '11/6/2021',
+    '11/7/2021',
+    '11/8/2021',
+  ];
+  const data = {
+    labels: labels,
+    datasets: [
+      {
+      label: 'Lighting',
+      backgroundColor: 'yellow',
+      borderColor: 'yellow',
+      data: [20, 40, 30, 26, 95, 44, 55, 99]
+    }
+  ]
+};
+
+  const config = {
+  type: 'line',
+  data: data,
+  options: {}
+};
+
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+</script>
+    </div>
+    </div>
+  </div>
+    </main>
+    <footer>
+      <div class = "help-icon">
+        <img onclick= "alert('Need Help?\n\n Home - go to system selection page (previous page)\n\n Back - go to previous page\n\n Click a light to turn on, click drop down for more functions')" align= right src="../images/about-icon.png" alt="Help button" class="help-button">
+      </div>
+      <div class = "settings-icon">
+        <img onclick= "location.href= '../settings.html'" align= right src="../images/cog-icon.png" alt="Settings Icon" class="settings-button">
+      </div>
+    </footer>
+  </body>
+</html>

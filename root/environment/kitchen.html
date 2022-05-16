@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<!-- kitchen.html -->
+<!-- Brandon Banner -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Environment: Kitchen</title>
+    <link href="css/environment-style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet'>
+    <script src = "js/index.js"></script>
+  </head>
+    <header>
+      <div class = "header">
+        <div class = "back-icon-section">
+          <img onclick="history.back()" align= left src="../images/back-icon.png" alt="back button" class="back-button">
+        </div>
+        <div class = "home-icon-section">
+          <img onclick= "location.href= '../index.html'" src="../images/home-icon.png" alt="Home button" class="home-button">
+        </div>
+      <div class = "title-section">
+      <h1 class='title'>Kitchen</h1>
+      </div>
+    </div>
+    </header>
+
+    <main>
+      <!-- Overall div for layout -->
+      <div class = "layout">
+        <!-- Div for the status and temperature sections -->
+      <div class = "first-half">
+        <!-- Status Section -->
+        <h2 class = 'section-title'>Current Status</h2>
+        <div class="vert-list-button-container" role="group" aria-label="First group">
+          <button type="button" class="vertical-list-button">Temperature: 70</button>
+          <button type="button" class="vertical-list-button">Humidity: 70% </button>
+          <button type="button" class="vertical-list-button">Lighting: <ul>
+            <li>Fan - High</li>
+            <li>Ceiling Light - ON</li>
+            <li>Lamp - OFF</li>
+          </ul> </button>
+      </div>
+    </div>
+        <!-- Div for second half -->
+    <div class = "second-half">
+
+      <!-- Div for usage section -->
+      <div class = "general-control-section">
+        <h2 class = 'section-title'>General Control</h2>
+        <div class = "list-button-container">
+          <button onclick= "location.href= 'climate-control.html'" type = "button list-button" class = "list-button" style="font-family: 'Yellowtail'";>Climate Control</button>
+          <button onclick= "location.href= 'lighting.html'"type = "button list-button" class = "list-button" style="font-family: 'Yellowtail'";>Lighting</button>
+        </div>
+    </div>
+    </div>
+  </div>
+
+    </main>
+
+    <footer>
+      <div class = "help-icon">
+        <img onclick= "alert('Need help?\n\n Home - go to system selection page (previous page)\n\n Current Status - shows current status of temperature, humidty and lighting. Click to adjust settings \n\n Climate Control - click to go to climate control page\n\n Lighting - click to go to lighting page')" align= right src="../images/about-icon.png" alt="Help button" class="help-button">
+      </div>
+      <div class = "settings-icon">
+        <img onclick= "location.href= '../settings.html'" align= right src="../images/cog-icon.png" alt="Settings Icon" class="settings-button">
+      </div>
+    </footer>
+  </body>
+</html>

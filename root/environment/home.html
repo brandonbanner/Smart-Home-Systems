@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<!-- home.html -->
+<!-- Brandon Banner -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Environment: Home</title>
+    <link href="css/environment-style.css" rel="stylesheet">
+  <script src = "environment/js/index.js"></script>
+  <script>document.body.style.backgroundImage = "radial-gradient(localStorage.bgcolor1, localStorage.bgcolor2)";</script>
+</head>
+  <body>
+    <header>
+      <div class = "header">
+        <div class = "home-icon-section">
+          <img onclick= "location.href= '../index.html'" align= left src="../images/home-icon.png" alt="Home button" class="home-button">
+        </div>
+      <div class = "title-section">
+      <h1 class='title'>Environment</h1>
+      </div>
+    </div>
+    </header>
+    <main>
+      <h2 class = 'section-title'>Overall</h2>
+      <div class = "list-button-container">
+        <button onclick= "location.href= 'climate-control.html'" type = "button list-button" class = "list-button";>Climate Control</button>
+        <button onclick= "location.href= 'water-heater.html'" type = "button list-button" class = "list-button";>Water Heater</button>
+      </div>
+      <h2 class = 'section-title'>First Floor</h2>
+      <div class = "list-button-container">
+        <button onclick= "location.href= 'living-room.html'" type = "button list-button" class = "list-button";>Living Room</button>
+        <button onclick= "location.href= 'dining-room.html'" type = "button list-button" class = "list-button";>Dining Room</button>
+        <button onclick= "location.href= 'kitchen.html'" type = "button list-button" class = "list-button";>Kitchen</button>
+        <button onclick= "location.href= 'first-floor-bathroom.html'" type = "button list-button" class = "list-button";>Bathroom</button>
+      </div>
+      <h2 class = 'section-title'>Second Floor</h2>
+      <div class = "list-button-container">
+        <button onclick= "location.href= 'master-bedroom.html'" type = "button list-button" class = "list-button";>Master Bedroom</button>
+        <button onclick= "location.href= 'lisas-room.html'" type = "button list-button" class = "list-button";>Lisa's Room</button>
+        <button onclick= "location.href= 'guest-room.html'"type = "button list-button" class = "list-button";>Guest Room</button>
+        <button onclick= "location.href= 'second-floor-bathroom.html'"type = "button list-button" class = "list-button";>Bathroom</button>
+      </div>
+    </main>
+    <footer>
+      <div class = "help-icon">
+        <img onclick= "alert('Need help?\n\n Home - go to system selection page (previous page)\n\n Climate Control - control climate for entire home\n\n Water Heater - control water heater\n\n Choose a room - click on a room button (eg. Living Room)  and adjust settings per room')"
+         align= right src="../images/about-icon.png" alt="Help button" class="help-button">
+      </div>
+      <div class = "settings-icon">
+        <img onclick= "location.href= '../settings.html'" align= right src="../images/cog-icon.png" alt="Settings Icon" class="settings-button">
+      </div>
+    </footer>
+  </body>
+</html>

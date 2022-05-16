@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<!-- settings.html -->
+<!-- Brandon Banner -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Settings</title>
+    <link href="environment/css/environment-style.css" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/25bda2b740.js" crossorigin="anonymous"></script>
+    <script src = "environment/js/index.js"></script>
+    <script>document.body.style.backgroundImage = "radial-gradient(localStorage.bgcolor1, localStorage.bgcolor2)";</script>
+  </head>
+  <body>
+    <header>
+      <div class = "header">
+        <div class = "back-icon-section">
+          <img onclick="history.back()" align= left src="images/back-icon.png" alt="back button" class="back-button">
+        </div>
+        <div class = "home-icon-section">
+          <img onclick= "location.href= 'index.html'" align= left src="images/home-icon.png" alt="Home button" class="home-button">
+        </div>
+      <div class = "title-section">
+      <h1 class='title'>Settings</h1>
+      </div>
+    </div>
+    </header>
+    <main>
+      <h2 class = 'section-title'>Background</h2>
+      <div class = "list-button-container">
+        <button name = "sunburst-button" onclick= "backgroundSunburst()" type = "button list-button" class = "sunburst-button";>Sunburst</button>
+        <button name = "lava-button" onclick= "backgroundLava()" type = "button list-button" class = "lava-button";>Lava</button>
+        <button name = "sky-button" onclick= "backgroundSky()" type = "button list-button" class = "sky-button";>Sky</button>
+        <button name = "ocean-button"onclick= "backgroundOcean()" type = "button list-button" class = "ocean-button";>Ocean</button>
+        <button name = "grass-button" onclick= "backgroundGrass()" type = "button list-button" class = "grass-button";>Grass</button>
+        <button name = "dusk-button" onclick= "backgroundDusk()" type = "button list-button" class = "dusk-button";>Dusk</button>
+        <button name = "purple-button" onclick= "backgroundPurple()" type = "button list-button" class = "purple-button";>Purple Haze</button>
+        <button name = "bubblegum-button" onclick= "backgroundBubbleGum()" type = "button list-button" class = "bubblegum-button";>Bubble Gum</button>
+        <button name = "choose-yo-button" onclick= "location.href= 'water-heater.html'" type = "button list-button" class = "list-button";>Choose your own</button>
+      </div>
+      <h2 class = 'section-title'>Usage History</h2>
+      <div class = "list-button-container">
+        <button onclick= "location.href= 'environment/usage.html'" type = "button list-button" class = "list-button";>Environment Usage</button>
+        <button  onclick = "alert('Entertainment subsystem not enabled')" (type = "button list-button" class = "list-button";>Entertainment Usage</button>
+      </div>
+    </main>
+    <footer>
+      <div class = "help-icon">
+      <img onclick= "alert('Need help?\n\n Home - go to system selection page\n\n Back - goes to previous page\n\n Change Background - choose a theme or choose your own  image\n\n Usage History - Choose a subsytem to show usage data for')" align= right src="images/about-icon.png" alt="Help button" class="help-button">
+      </div>
+      <div class = "settings-icon">
+        <img onclick= "location.href= '../settings.html'" align= right src="images/cog-icon.png" alt="Settings Icon" class="settings-button">
+      </div>
+    </footer>
+  </body>
+</html>

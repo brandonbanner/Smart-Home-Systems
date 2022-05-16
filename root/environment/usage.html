@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+
+<!-- usage.html -->
+
+<!-- Brandon Banner -->
+
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="utf-8">
+  <title>Usage History</title>
+  <link href="css/environment-style.css" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/25bda2b740.js" crossorigin="anonymous"></script>
+  <script>document.body.style.backgroundImage = "radial-gradient(localStorage.bgcolor1, localStorage.bgcolor2)";</script>
+</head>
+  <body>
+    <header>
+      <div class = "header">
+        <div class = "back-icon-section">
+          <img onclick="history.back()" align= left src="../images/back-icon.png" alt="back button" class="back-button">
+        </div>
+        <div class = "home-icon-section">
+          <img onclick= "location.href= 'index.html'" align= left src="../images/home-icon.png" alt="Home button" class="home-button">
+        </div>
+      <div class = "title-section">
+      <h1 class='title'>Usage History: Environment</h1>
+      </div>
+    </div>
+    </header>
+    <main>
+      <div class="usage-container">
+      <canvas id="myChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script> //DISCLAIMER! All script code is modified from Chartjs.org
+  const labels = [
+    '11/1/2021',
+    '11/2/2021',
+    '11/3/2021',
+    '11/4/2021',
+    '11/5/2021',
+    '11/6/2021',
+    '11/7/2021',
+    '11/8/2021',
+  ];
+  const data = {
+    labels: labels,
+    datasets: [
+      {
+      label: 'Climate Control',
+      backgroundColor: 'red',
+      borderColor: 'red',
+      data: [100, 68, 200, 185, 177, 30, 45, 93],
+    },
+      {
+      label: 'Lighting',
+      backgroundColor: 'yellow',
+      borderColor: 'yellow',
+      data: [20, 40, 30, 26, 95, 44, 55, 99]
+    },
+      {
+      label: 'Water Heater',
+      backgroundColor: 'blue',
+      borderColor: 'blue',
+      data: [10, 60, 120, 76, 75, 90, 65, 220]
+    }
+  ]
+};
+
+  const config = {
+  type: 'line',
+  data: data,
+  options: {}
+};
+
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+</script>
+</main>
+<footer class = "short-page-footer">
+  <div class = "help-icon">
+    <img onclick= "alert('Need help?\n\n Home - go to system selection page (previous page)\n\n Usage Data - shows usage of the climate control, lighting, and water heater systems.')" align= right src="../images/about-icon.png" alt="Help button" class="help-button">
+  </div>
+  <div class = "settings-icon">
+    <img onclick= "location.href= '../settings.html'" align= right src="../images/cog-icon.png" alt="Settings Icon" class="settings-button">
+  </div>
+</footer>
+  </body>
+</html>

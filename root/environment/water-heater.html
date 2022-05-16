@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<!-- water-heater.html -->
+<!-- Brandon Banner -->
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Environment: Water Heater</title>
+    <link href="css/environment-style.css" rel="stylesheet">
+    <link href='https://fonts.googleapis.com/css?family=Yellowtail' rel='stylesheet'>
+  </head>
+  <body>
+    <header>
+      <div class = "header">
+        <div class = "back-icon-section">
+          <img onclick="history.back()" align= left src="../images/back-icon.png" alt="back button" class="back-button">
+        </div>
+        <div class = "home-icon-section">
+          <img onclick= "location.href= '../index.html'" src="../images/home-icon.png" alt="Home button" class="home-button">
+        </div>
+      <div class = "title-section">
+      <h1 class='title'>Water Heater</h1>
+      </div>
+    </div>
+    </header>
+
+    <main>
+      <!-- Overall div for layout -->
+      <div class = "layout">
+        <!-- Div for the status and temperature sections -->
+      <div class = "first-half">
+        <!-- Status Section -->
+        <h2 class = 'section-title'>Status</h2>
+        <!-- On / Off toggle switch -->
+        <input type="checkbox" id="switch">
+        <div class="app">
+          <div class="content">
+            <label for="switch">
+            <div class="toggle"></div>
+            <div class="names">
+              <p class="on">ON</p>
+              <p class="off">OFF</p>
+            </div>
+            </label>
+          </div>
+        </div>
+        <!-- Temperature Section -->
+      <h2 class = 'section-title'>Temperature</h2>
+      <!-- Temperature slider -->
+      <div class="slidecontainer">
+        <input type="range" min="55" max="90" value="72" class="temp-slider" id="myRange">
+      </div>
+    </div>
+        <!-- Div for usage section -->
+    <div class = "second-half">
+      <h2 class = 'section-title'>Usage History</h2>
+
+      <!-- Usage history chart -->
+      <!-- Show / Hide toggle switch -->
+      <input type="checkbox" id="sh-switch">
+      <div class="app">
+        <div class="sh-content">
+          <label for="switch">
+          <div class="sh-toggle"></div>
+          <div class="names">
+            <p class="show">Show</p>
+            <p class="hide">Hide</p>
+          </div>
+          </label>
+        </div>
+      </div>
+      <div class="usage-container-small">
+      <canvas align = right id="myChart"></canvas>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+
+    <script> //DISCLAIMER! All script code is modified from Chartjs.org
+  const labels = [
+    '11/1/2021',
+    '11/2/2021',
+    '11/3/2021',
+    '11/4/2021',
+    '11/5/2021',
+    '11/6/2021',
+    '11/7/2021',
+    '11/8/2021',
+  ];
+  const data = {
+    labels: labels,
+    datasets: [
+      {
+      label: 'Water Heater',
+      backgroundColor: 'blue',
+      borderColor: 'blue',
+      data: [20, 40, 30, 26, 95, 44, 55, 99]
+    }
+  ]
+};
+
+  const config = {
+  type: 'line',
+  data: data,
+  options: {}
+};
+
+  const myChart = new Chart(
+    document.getElementById('myChart'),
+    config
+  );
+</script>
+    </div>
+    </div>
+  </div>
+
+    </main>
+
+    <footer class = "short-page-footer">
+      <div class = "help-icon">
+        <img onclick= "alert('Need help?\n\n Home - go to system selection page (previous page)\n\n Status - turn water heater on or off \n\n Temperature - drag slider to adjust temperature of water heater\n\n Usage History - shows usgae history of water heater')" align= right src="../images/about-icon.png" alt="Help button" class="help-button">
+      </div>
+      <div class = "settings-icon">
+        <img onclick= "location.href= '../settings.html'" align= right src="../images/cog-icon.png" alt="Settings Icon" class="settings-button">
+      </div>
+    </footer>
+  </body>
+</html>

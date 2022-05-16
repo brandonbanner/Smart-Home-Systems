@@ -1,0 +1,525 @@
+/* environment-style.css */
+/* Brandon Banner */
+@import url('https://fonts.googleapis.com/css?family=Yellowtail');
+@import url('https://fonts.googleapis.com/css?family=Rubik');
+
+body {
+  background-image: radial-gradient(#FFCD28, #FFA500);
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  back
+  color: black;
+  height: 100%;
+  margin: 0;
+  font-family: 'Yellowtail';
+}
+
+header{
+margin: 50px;
+}
+
+footer{
+  font-size: 25px;
+  width: 100%;
+  position: inherit;
+  margin: 25px;
+  align-items: right;
+  align-content: right;
+}
+
+.short-page-footer{
+  font-size: 25px;
+  width: 100%;
+  bottom: 0;
+  position: fixed;
+  text-align: center;
+  margin: 36px;
+  margin-bottom: 25px;
+}
+
+.title-section{
+display: inline-block;
+position: absolute;
+right: 0px;
+margin-right: 75px;
+}
+
+.home-icon-section{
+  margin: inherit;
+  display: inline;
+  margin-left: 25px;
+}
+
+.back-icon-section{
+  margin: inherit;
+  display: inline-block;
+  margin-left: 25px;
+}
+/* -------------------------------- Buttons -------------------------------- */
+.back-button{
+  margin-top: 5px;
+  width: 47px;
+}
+
+.home-button{
+  margin-top: 5px;
+  width: 47px;
+}
+
+.settings-button{
+  display: block;
+  margin-right: 15px;
+  width: 50px;
+  margin-bottom: 25px;
+}
+
+.help-button{
+  display: block;
+  width: 65px;
+  margin-right: 75px;
+  margin-bottom: 25px;
+}
+
+.title{
+  font-size: 50px;
+  display: inline;
+  text-align: right;
+}
+
+.section-title{
+  margin-left: 75px;
+  font-size: 40px;
+  margin-top:10px;
+  margin-bottom: 10px;
+}
+
+.list-button {
+    border: none;
+    padding: 25px;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.20);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    font-weight: bold;
+    border-radius: 5px;
+    margin: 25px;
+    text-align: center;
+    font-size: 30px;
+    width: 250px;
+    font-family: Yellowtail;
+}
+
+.sunburst-button {
+  border: none;
+  padding: 25px;
+  display: inline-block;
+  background-image: radial-gradient(#FFCD28, #FFA500);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 25px;
+  text-align: center;
+  font-size: 30px;
+  width: 250px;
+  font-family: Yellowtail;
+}
+
+.lava-button{
+  border: none;
+  padding: 25px;
+  display: inline-block;
+  background-image: radial-gradient(#db0c0c, #e0780b);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 25px;
+  text-align: center;
+  font-size: 30px;
+  width: 250px;
+  font-family: Yellowtail;
+}
+
+.sky-button{
+  border: none;
+  padding: 25px;
+  display: inline-block;
+  background-image: radial-gradient(#9cd0ee,#0b6ae0);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 25px;
+  text-align: center;
+  font-size: 30px;
+  width: 250px;
+  font-family: Yellowtail;
+}
+
+.ocean-button{
+  border: none;
+  padding: 25px;
+  display: inline-block;
+  background-image: radial-gradient(#1e888b,#0bc0e0);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 25px;
+  text-align: center;
+  font-size: 30px;
+  width: 250px;
+  font-family: Yellowtail;
+}
+
+.grass-button{
+  border: none;
+  padding: 25px;
+  display: inline-block;
+  background-image: radial-gradient(#519027,#b1d699);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 25px;
+  text-align: center;
+  font-size: 30px;
+  width: 250px;
+  font-family: Yellowtail;
+}
+
+.dusk-button{
+  border: none;
+  padding: 25px;
+  display: inline-block;
+  background-image: radial-gradient(#949494,#212121);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 25px;
+  text-align: center;
+  font-size: 30px;
+  width: 250px;
+  font-family: Yellowtail;
+}
+
+.purple-button{
+  border: none;
+  padding: 25px;
+  display: inline-block;
+  background-image: radial-gradient(#8b00ff,#e5b1eb);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 25px;
+  text-align: center;
+  font-size: 30px;
+  width: 250px;
+  font-family: Yellowtail;
+}
+
+.bubblegum-button{
+  border: none;
+  padding: 25px;
+  display: inline-block;
+  background-image: radial-gradient(#fcaff9,#e00ba0);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  font-weight: bold;
+  border-radius: 5px;
+  margin: 25px;
+  text-align: center;
+  font-size: 30px;
+  width: 250px;
+  font-family: Yellowtail;
+}
+
+.floor-list-button {
+    border: none;
+    padding: 25px;
+    display: inline-block;
+    background-color: rgba(255,255,255,0.20);
+    border: 1px solid rgba(255,255,255,0.1);
+    box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+    font-weight: bold;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 25px;
+    font-family: Yellowtail;
+}
+
+.floor-button-container{
+margin-left: 75px;
+font-family: Yellowtail;
+}
+
+.vertical-list-button{
+  border: none;
+  padding: 25px;
+  /* display: inline-block; */
+  background-color: rgba(255,255,255,0.20);
+  border: 1px solid rgba(255,255,255,0.1);
+  box-shadow: 0 0 1rem 0 rgba(0, 0, 0, .2);
+  font-weight: bold;
+  border-radius: 5px;
+  font-size: 25px;
+  font-family: Yellowtail;
+  width: 300px;
+  text-align: left;
+
+}
+
+.floor-list-button:visited {
+  background-color: rgba(255,255,255,0.60);
+}
+
+.floor-list-button:active {
+  background-color: rgba(255,255,255,0.60);
+}
+
+.list-button-container{
+margin-left: 50px;
+font-family: Yellowtail;
+}
+.vert-list-button-container{
+margin-left: 50px;
+font-family: Yellowtail;
+width: 300px;
+height: 500px;
+}
+
+.body {
+  position: relative;
+  width: 100vw;
+  height: 100vh;
+  background-color: #fff;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color .1s;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 75px;
+  text-align: center;
+  width: 250px;
+  transform: translateY(5%);
+  font-family: 'Rubik';
+}
+
+.sh-content {
+  display: flex;
+  flex-direction: column;
+  margin-left: 75px;
+  text-align: center;
+  width: 250px;
+  transform: translateY(5%);
+  font-family: 'Rubik';
+}
+p {
+  font-size: 90%;
+}
+label, .toggle {
+  height: 2.8rem;
+  border-radius: 100px;
+}
+label, .sh-toggle {
+  height: 2.8rem;
+  border-radius: 100px;
+}
+label {
+  width: 100%;
+  background-color: rgba(0,0,0,.1);
+  border-radius: 100px;
+  position: relative;
+  margin: 1.8rem 0 4rem 0;
+  cursor: pointer;
+}
+.toggle {
+  position: absolute;
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 15px rgba(0,0,0,.15);
+  transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.sh-toggle {
+  position: absolute;
+  width: 50%;
+  background-color: #fff;
+  box-shadow: 0 2px 15px rgba(0,0,0,.15);
+  transition: transform .3s cubic-bezier(0.25, 0.46, 0.45, 0.94);
+}
+.names {
+  font-size: 90%;
+  font-weight: bolder;
+  width: 65%;
+  margin-left: 17.5%;
+  margin-top: .5%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  user-select: none;
+}
+.off {
+  opacity: .5;
+}
+.mark {
+  border-radius: 100px;
+  background-color: black;
+}
+.mark {
+  width: 7%;
+  margin: auto;
+  position: relative;
+  height: .25rem;
+}
+.mark::before {
+  content: '';
+  position: absolute;
+  width: .25rem;
+  height: 100%;
+  left: -70%;
+  opacity: .15;
+  background-color: inherit;
+}
+.mark::after {
+  content: '';
+  position: absolute;
+  width: .25rem;
+  height: 100%;
+  right: -70%;
+  opacity: .15;
+  background-color: inherit;
+}
+
+/* -------- On off Switch ------------*/
+[type="checkbox"] {
+  display: none;
+}
+/* Toggle */
+[type="checkbox"]:checked + .app .toggle{
+  transform: translateX(100%);
+  background-color: #34323D;
+}
+[type="checkbox"]:checked + .app .dark{
+  opacity: 1;
+}
+[type="checkbox"]:checked + .app .light{
+  opacity: .5;
+}
+
+.layout{
+  display: flex;
+}
+.first-half{
+  width: 50%
+}
+.second-half{
+  /* margin-right: 75px; */
+}
+/* Temperature slider */
+.slidecontainer {
+  width: 100%; /* Width of the outside container */
+}
+
+/* The temp slider itself */
+.temp-slider {
+  -webkit-appearance: none;
+  width: 400px;
+  height: 15px;
+  border-radius: 5px;
+  background-image: linear-gradient(to right, blue , red);
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-left: 75px;
+  margin-top: 30px;
+}
+
+/* Standard slider */
+.slider {
+  -webkit-appearance: none;
+  width: 400px;
+  height: 15px;
+  border-radius: 5px;
+  background-image: white;
+  outline: none;
+  opacity: 0.7;
+  -webkit-transition: .2s;
+  transition: opacity .2s;
+  margin-left: 75px;
+  margin-top: 30px;
+}
+
+/* Mouse-over effects */
+.temp-slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+.slider:hover {
+  opacity: 1; /* Fully shown on mouse-over */
+}
+
+/* The slider handle (use -webkit- (Chrome, Opera, Safari, Edge) and -moz- (Firefox) to override default look) */
+.temp-slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+}
+
+.slider::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  appearance: none;
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: black;
+  cursor: pointer;
+}
+
+.temp-slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+.slider::-moz-range-thumb {
+  width: 25px;
+  height: 25px;
+  border-radius: 50%;
+  background: #04AA6D;
+  cursor: pointer;
+}
+
+/* Usage history */
+.usage-container{
+  position: absolute;
+  width: 800px;
+  background-color: rgba(255,255,255, 0.20);
+  top: 50%;
+  left: 50%;
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+.usage-container-small{
+  position: relative;
+  width: 500px;
+  background-color: rgba(255,255,255, 0.20);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+  margin-top: 30%;
+  margin-left: 65%;
+}
